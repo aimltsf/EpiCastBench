@@ -21,7 +21,7 @@ The datasets used in this benchmark are hosted separately to ensure modularity a
 
 After downloading, place the dataset in:
 
-EpiCastBench/data/
+`EpiCastBench/data/`
 
 ## Setup
 
