@@ -1,5 +1,11 @@
 # This is the main execution file for EpiCastBench codes
 
+import os
+try:
+   os.environ["CUDA_VISIBLE_DEVICES"] = "0"
+except:
+   pass
+
 import pandas as pd
 from config import *
 from utils import set_seed, get_horizon
