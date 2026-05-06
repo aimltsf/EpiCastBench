@@ -13,7 +13,7 @@ def load_series(path):
     """
     filename = DATA_DIR / path
     
-    df = pd.read_csv(path)
+    df = pd.read_csv(filename)
 
     try:
         df["time"] = pd.to_datetime(df["time"])
