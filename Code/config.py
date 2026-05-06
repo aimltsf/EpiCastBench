@@ -1,4 +1,8 @@
-# This is the connfiguration file for the EpiCastBench Codes
+# -----------------------------
+# Dataset Configuration
+# -----------------------------
+# List of all epidemic time-series datasets used in EpiCastBench.
+# Each dataset corresponds to a disease-region pair.
 
 DATASETS = [
     "chickenpox_hungary.csv", "covid_india.csv", "dengue_malaysia.csv", "chikungunya_brazil.csv", "covid_ireland.csv",
@@ -11,11 +15,34 @@ DATASETS = [
     "covid_eu.csv", "dengue_colombia.csv", "zika_mexico.csv", "covid_germany.csv", "dengue_malaysia2.csv"
 ]
 
+# -----------------------------
+# Forecasting Horizon Settings
+# -----------------------------
+# The forecasting horizon defines how far into the future the model predicts.
+#
+# Available options:
+#   - "short"  : short-term forecasting
+#   - "medium" : medium-term forecasting
+#   - "long"   : long-term forecasting (default setting)
+#
+# You can change this value to evaluate model performance under different forecasting regimes.
+
 HORIZON_TYPE = "long" # Choose between "long", "medium", "short"
+
+# -----------------------------
+# Window Configuration
+# -----------------------------
+# INPUT_CHUNK: number of past timesteps used as model input
+# OUTPUT_CHUNK: number of future timesteps to predict, multistep forecasts are made iteratively
+# These define the sliding window for supervised learning.
+
 INPUT_CHUNK = 24
 OUTPUT_CHUNK = 12
 N_EPOCHS = 50
 RANDOM_STATE = 42
+
+# Mapping from dataset name to sampling frequency.
+# Used to correctly interpret temporal resolution across heterogeneous datasets.
 
 DATA_FREQUENCY_MAPPING = {
     "chickenpox_hungary": "weekly",
@@ -59,6 +86,11 @@ DATA_FREQUENCY_MAPPING = {
     "zika_colombia": "weekly",
     "zika_mexico": "weekly",
 }
+
+# -----------------------------
+# Model Benchmarking Suite
+# -----------------------------
+# List of models evaluated in EpiCastBench experiments.
 
 MODELS_TO_RUN = [
     "Naive", "DLinear", "RandomForest", "XGBoost", "TSMixer", "KAN", "LSTM", "DeepAR",
