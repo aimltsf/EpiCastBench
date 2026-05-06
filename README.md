@@ -1,4 +1,4 @@
-# EpiCastBench: A Benchmark for Multivariate Epidemic Forecasting (Code)
+# EpiCastBench: Datasets and Benchmarks for Multivariate Epidemic Forecasting (Code)
 
 This repository contains the codebase for EpiCastBench, a benchmark designed to evaluate multivariate epidemic forecasting models across diverse real-world datasets.
 
