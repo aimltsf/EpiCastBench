@@ -55,6 +55,28 @@ EpiCastBench/
 └── README.md
 ```
 
+## Models Implemented
+
+EpiCastBench includes a diverse set of forecasting baselines and modern deep learning models to ensure comprehensive benchmarking.
+
+- Naive
+- Random Forest
+- XGBoost
+- LSTM
+- TCN
+- Transformer
+- N-BEATS
+- N-HiTS
+- DeepAR
+- DLinear
+- TSMixer
+- TiDE
+- KAN
+- Chronos2
+- TimesFM
+
+All models are implemented in `code/models.py` and are evaluated under a unified training and testing pipeline defined in `code/main.py`.
+
 ## Reproducibility
 
 All experiments are designed to be reproducible using:
