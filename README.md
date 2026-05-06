@@ -60,18 +60,18 @@ EpiCastBench/
 EpiCastBench includes a diverse set of forecasting baselines and modern deep learning models to ensure comprehensive benchmarking.
 
 - Naive
+- DLinear [[Zeng et al., 2023]](https://dl.acm.org/doi/10.1609/aaai.v37i9.26317)
 - Random Forest [[Breiman, 2001]](https://doi.org/10.1023/A:1010933404324)
 - XGBoost [[Chen et al., 2016]](https://doi.org/10.1145/2939672.2939785)
+- TSMixer [[Chen et al., 2023]](https://openreview.net/pdf?id=wbpxTuXgm0)
+- KAN [[Liu et al., 2025]](https://openreview.net/forum?id=Ozo7qJ5vZi)
 - LSTM [[Hochreiter et al., 1997]](https://www.bioinf.jku.at/publications/older/2604.pdf)
+- DeepAR [[Salinas et al., 2020]](https://doi.org/10.1016/j.ijforecast.2019.07.001)
 - TCN [[Chen et al., 2020]](https://doi.org/10.1016/j.neucom.2020.03.011)
-- Transformer [[Vaswani et al., 2017]](https://proceedings.neurips.cc/paper_files/paper/2017/file/3f5ee243547dee91fbd053c1c4a845aa-Paper.pdf)
 - NBeats [[Oreshkin et al., 2020]](https://openreview.net/forum?id=r1ecqn4YwB)
 - NHiTS [[Challu et al., 2023]](https://doi.org/10.1609/aaai.v37i6.25854)
-- DeepAR [[Salinas et al., 2020]](https://doi.org/10.1016/j.ijforecast.2019.07.001)
-- DLinear [[Zeng et al., 2023]](https://dl.acm.org/doi/10.1609/aaai.v37i9.26317)
-- TSMixer [[Chen et al., 2023]](https://openreview.net/pdf?id=wbpxTuXgm0)
+- Transformer [[Vaswani et al., 2017]](https://proceedings.neurips.cc/paper_files/paper/2017/file/3f5ee243547dee91fbd053c1c4a845aa-Paper.pdf)
 - TiDE [[Das et al., 2023]](https://openreview.net/forum?id=pCbC3aQB5W)
-- KAN [[Liu et al., 2025]](https://openreview.net/forum?id=Ozo7qJ5vZi)
 - Chronos2 [[Ansari et al., 2025]](https://arxiv.org/abs/2510.15821)
 - TimesFM [[Das et al., 2024]](https://openreview.net/forum?id=jn2iTJas6h)
 
