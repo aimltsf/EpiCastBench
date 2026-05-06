@@ -42,7 +42,7 @@ python Code/main.py
 ```
 EpiCastBench/
 │
-├── code/
+├── Code/
 │   ├── config.py        # experiment and model configuration
 │   ├── data_loader.py   # dataset loading and preprocessing
 │   ├── evaluator.py     # evaluation metrics and benchmarking
