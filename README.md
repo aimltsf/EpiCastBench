@@ -75,7 +75,7 @@ EpiCastBench includes a diverse set of forecasting baselines and modern deep lea
 - Chronos2 [[Ansari et al., 2025]](https://arxiv.org/abs/2510.15821)
 - TimesFM [[Das et al., 2024]](https://openreview.net/forum?id=jn2iTJas6h)
 
-All models are implemented in `code/models.py` and are evaluated under a unified training and testing pipeline defined in `code/main.py`.
+All models are implemented in `Code/models.py` and are evaluated under a unified training and testing pipeline defined in `Code/main.py`.
 
 ## Reproducibility
 
