@@ -78,6 +78,14 @@ EpiCastBench includes a diverse set of forecasting baselines and modern deep lea
 
 All models are implemented in `Code/models.py` and are evaluated under a unified training and testing pipeline defined in `Code/main.py`.
 
+## Model Recommendation Trees
+
+The `Recommendation_Trees/` folder contains interpretable decision trees for selecting forecasting models based on dataset features. Separate trees are provided for each evaluation metric (MAE, RMSE, SMAPE, and MASE), illustrating how properties such as series length, trend, seasonality, sparsity, and long-memory influence the choice of forecasting model.
+
+An example recommendation tree based on the MASE metric is shown below. The complete set of decision trees for all evaluation metrics are available in the `Recommendation_Trees/` folder.
+
+<p align="center"> <img src="Recommendation_Trees/MASE_Tree_FInal.png" alt="Feature-Guided Model Identification under MASE " width="850"/> </p>
+
 ## Reproducibility
 
 All experiments are designed to be reproducible using:
